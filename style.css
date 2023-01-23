@@ -1,0 +1,108 @@
+body{
+    font-family: sans-serif;
+    background-color: antiquewhite;;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    background-color: black;
+    color: white;
+    list-style-type: none;
+    align-items: center;
+    height: 60px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+nav ul li{
+    padding: 0 12px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+.brand img{
+    width: 45px;
+    padding: 0 10px;
+}
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 70%;
+    margin: 20px auto;
+    background-image: url('./bg.jpg');
+    background-size: cover;
+    padding: 34px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.songItemContainer{
+    margin-top: 74px;
+}
+.songItem{
+    width: 45vw;
+    height: 50px;
+    display: flex;
+    /* background-color: white; */
+    /* color: black; */
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+.timestamp{
+    margin: 0 15px;
+}
+.timestamp i{
+   cursor: pointer;
+   margin: 0 8px;
+}
+.songList h2{
+    text-align: center;
+    margin: 0 268px;
+}
+.button{
+       position: sticky;
+       bottom: 0;
+       height: 115px;
+       background-color: black;
+       color: white;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+}
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+.icons{
+    margin-top: 10px;
+}
+.icons i{
+   cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+}
+.songInfo img{
+   opacity: 0;
+   transition: opacity 0.4s ease-in;
+}
+.songInfo span{
+   margin: 0 10px;
+}
